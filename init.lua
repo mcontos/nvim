@@ -19,3 +19,4 @@ local opts = {}
 -- Plugin Configuration
 -- Lazy
 require("lazy").setup("plugins")
+require("vim-options")

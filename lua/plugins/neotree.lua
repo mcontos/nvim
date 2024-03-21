@@ -8,5 +8,13 @@ return {
   },
   config = function()
     vim.keymap.set('n', '<C-n>', ':Neotree toggle<CR>', {})
-  end
+  end,
+  opts = {
+    filesystem = {
+      filtered_items = {
+        visible = true,
+        hide_dotfiles = false,
+      }
+    }
+  }
 }

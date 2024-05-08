@@ -6,15 +6,13 @@ return {
     "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
     "MunifTanjim/nui.nvim",
   },
-  config = function()
-    vim.keymap.set('n', '<C-n>', ':Neotree toggle<CR>', {})
-  end,
   opts = {
     filesystem = {
       filtered_items = {
         visible = true,
         hide_dotfiles = false,
+        hide_gitignored = false,
       }
     }
-  }
+  },
 }
